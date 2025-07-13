@@ -3,7 +3,34 @@ entries:
   litlyx:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-07-13T05:50:56.766943854Z"
+    created: "2025-07-13T06:02:35.260264001Z"
+    dependencies:
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.18.5
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.1.5
+    description: A Helm chart for Litlyx analytics platform
+    digest: b487cd32c8dec7084bbf06a0ce0d21e358291479df9cf00e00f0e78105e45051
+    keywords:
+    - analytics
+    - monitoring
+    - dashboard
+    - metrics
+    maintainers:
+    - email: florian@florianspk.fr
+      name: florianspk
+    name: litlyx
+    type: application
+    urls:
+    - https://florianspk.github.io/helm-charts/litlyx-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
+    created: "2025-07-13T06:02:35.249842544Z"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -28,4 +55,4 @@ entries:
     urls:
     - https://florianspk.github.io/helm-charts/litlyx-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-13T05:50:56.756794213Z"
+generated: "2025-07-13T06:02:35.238916563Z"
